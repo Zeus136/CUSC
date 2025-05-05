@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kết quả Dự đoán</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+        text-align: center;
+      }
+      h1 {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px 0;
+      }
+      .result-container {
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+      a {
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+        color: white;
+        background-color: #4caf50;
+        padding: 10px 20px;
+        border-radius: 4px;
+      }
+      a:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Kết quả Dự đoán</h1>
+    <div class="result-container">
+      <p><strong>Phác đồ điều trị:</strong></p>
+      <p>{{ prediction }}</p>
+      <a href="/">Quay lại</a>
+    </div>
+  </body>
+</html>

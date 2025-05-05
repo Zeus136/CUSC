@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phác Đồ Điều Trị</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+        text-align: center;
+      }
+      h1 {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px 0;
+      }
+      form {
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+      }
+      label {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nhập thông tin để nhận phác đồ điều trị</h1>
+    <form action="/predict" method="POST">
+      <label for="input">Nhập mã ICD, tên bệnh, hoặc triệu chứng:</label><br />
+      <input
+        type="text"
+        id="input"
+        name="input"
+        placeholder="Ví dụ: J00, Cảm lạnh, Sổ mũi, ho"
+        required
+      /><br /><br />
+      <input type="submit" value="Dự đoán" />
+    </form>
+  </body>
+</html>
